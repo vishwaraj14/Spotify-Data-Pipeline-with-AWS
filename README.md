@@ -5,7 +5,7 @@ This project extracts, transforms, and loads Spotify playlist data into AWS usin
 ##  Architecture Diagram
 
 
-![Spotify ETL Architecture](architecture/ETL.png)
+![Spotify ETL Architecture](ETL.png)
 
 
 

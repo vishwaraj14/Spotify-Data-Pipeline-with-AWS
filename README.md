@@ -2,8 +2,8 @@
 This project extracts, transforms, and loads Spotify playlist data into AWS using a serverless architecture with AWS Lambda, Amazon S3, Glue, andAthena. It showcases a full ETL pipeline built with Python, Spotipy (Spotify API), and AWS services.
 
 
-## 📌 Architecture Diagram
-## 📌 Architecture Diagram
+##  Architecture Diagram
+
 
 ![Spotify ETL Architecture](architecture/ETL.png)
 

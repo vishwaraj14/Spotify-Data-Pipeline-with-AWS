@@ -11,6 +11,7 @@ This project extracts, transforms, and loads Spotify playlist data into AWS usin
 
 ## Overview
 -Source: Spotify API
+
 -Destination: Amazon S3, AWS Glue Catalog, Amazon Athena
 -Trigger: AWS CloudWatch (daily)
 -Processing: AWS Lambda (Python functions)

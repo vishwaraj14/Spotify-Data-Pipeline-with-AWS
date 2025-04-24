@@ -34,3 +34,27 @@ This project extracts, transforms, and loads Spotify playlist data into AWS usin
   - `transformed_data/artist_data/`
   - `transformed_data/songs_data/`  
 - Moves processed raw data to `raw_data/processed/`.
+
+### 3. Load
+
+- **AWS Glue Crawler**:  
+  - Crawls the `transformed_data/` folders.
+  - Infers schema and updates the Glue Data Catalog.
+
+- **AWS Glue Data Catalog**:  
+  - Creates structured tables from the transformed CSVs:
+    - `album_data`
+    - `artist_data`
+    - `songs_data`
+
+- **Amazon Athena**:  
+  - Runs SQL queries on the structured datasets for analytics.
+  - Example:
+    ```sql
+    SELECT artist_name, COUNT(*) AS song_count
+    FROM songs_data
+    GROUP BY artist_name
+    ORDER BY song_count DESC
+    LIMIT 10;
+    ```
+
